@@ -1,4 +1,4 @@
-## Music2Dance
+## :dancers: Music2Dance :dancer:
 #### Generating Dance steps for given music (CNN + LSTM + MDN)
 
 ### Required Python packages
@@ -18,17 +18,20 @@
         * python index3_create_Only_in_out_dataset.py
 
     2. Training
-        * python index4_train_mdn_simple_rnn.py
+        * python index4_train_mdn_simple_rnn_bnc.py
 
     3. Testing (works directly as pretrained weights included in repo)
         * run jupyter notebook in root directory
-        * open index5_test_trained_model_simplernn.ipynb and run all cells
+        * open index5_test_trained_model_simplernn_for_bnc.ipynb and run all cells
         * use some software(may be windows 10 photos app) to combine generated video and input audio
 
-| Model | Results |
-|:---:|:---:|
-![Music2Dance Model](images/Music2Dance.png?raw=true "Music2Dance") | [![Music2Dance Results](images/Music2Dance_sample.gif)](https://www.youtube.com/watch?v=Db79bIJvxdw) |
+### Results
 
+| Classical | Western | Mixed |
+|:---:|:---:|:---:|
+|[![Music2Dance Classical](images/classical.gif)](https://www.youtube.com/watch?v=Db79bIJvxdw) | [![Music2Dance Western](images/western.gif)](https://www.youtube.com/watch?v=qbWkt3RPPOw) | [![Music2Dance Mixed](images/mixed.gif)](https://www.youtube.com/watch?v=FqOioNX1FAI)
+
+![Music2Dance Cheat Sheet](images/Music2Dance_cheatsheet.jpg?raw=true "Music2Dance Cheat Sheet")
 
 ### Directory Structure
 ```
@@ -57,8 +60,6 @@ Music2Dance(project root)
 │
 ├───Object_detection              - Object Detection model to detect human bounding box before finding the pose 
 │   │   mscoco_label_map.pbtxt
-│   │   person1.jpg
-│   │   person2.jpg
 │   │   string_int_label_map.proto
 │   │   visualization_utils.py
 │   │
@@ -93,20 +94,11 @@ Music2Dance(project root)
         │   tfjs2python.py        - Converting TensorflowJs model to python tensorflow understandable model
         │   wget.py
         │
-        ├───checkpoints
-        │       checkpoint
-        │       model.ckpt.data-00000-of-00001
-        │       model.ckpt.index
-        │       model.ckpt.meta
-        │
-        ├───images
-        │       result.png
-        │
-        ├───models
-        │       model.pbtxt
-        │
-        └───waits
-            └───mobilenet_v1_100
+        └───checkpoints
+                checkpoint
+                model.ckpt.data-00000-of-00001
+                model.ckpt.index
+                model.ckpt.meta        
 ```
 
 ### References
@@ -115,3 +107,6 @@ Music2Dance(project root)
 * https://github.com/infocom-tpo/PoseNet-CoreML
 * https://github.com/tensorflow/models/tree/master/research/object_detection
 * https://github.com/axelbrando/Mixture-Density-Networks-for-distribution-and-uncertainty-estimation 
+
+
+<center>Copyright (c) 2018 ajay</center>
