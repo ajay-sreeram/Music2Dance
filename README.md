@@ -1,7 +1,7 @@
 ## :dancers: Music2Dance :dancer:
 #### Generating Dance steps for given music (CNN + LSTM + MDN)
 
-### Required Python packages
+### Required Python packages:
 
     * torch, torchvision
     * tensorflow, tensorboardX
@@ -25,7 +25,7 @@
         * open index5_test_trained_model_simplernn_for_bnc.ipynb and run all cells
         * use some software(may be windows 10 photos app) to combine generated video and input audio
 
-### Results
+### Results:
 
 | Classical | Western | Mixed |
 |:---:|:---:|:---:|
@@ -33,7 +33,7 @@
 
 ![Music2Dance Cheat Sheet](images/Music2Dance_cheatsheet.jpg?raw=true "Music2Dance Cheat Sheet")
 
-### Directory Structure
+### Directory Structure:
 ```
 Music2Dance(project root)
 |
@@ -101,14 +101,14 @@ Music2Dance(project root)
                 model.ckpt.meta        
 ```
 
-### References
+### References:
 
 * https://github.com/Fhrozen/motion_dance
 * https://github.com/infocom-tpo/PoseNet-CoreML
 * https://github.com/tensorflow/models/tree/master/research/object_detection
 * https://github.com/axelbrando/Mixture-Density-Networks-for-distribution-and-uncertainty-estimation 
 
-
+---
 <p align="center">
-  Copyright (c) 2018 ajay
+  Copyright © 2018, Ajay Sreeram
 </p>
