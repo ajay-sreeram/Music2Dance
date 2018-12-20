@@ -109,4 +109,6 @@ Music2Dance(project root)
 * https://github.com/axelbrando/Mixture-Density-Networks-for-distribution-and-uncertainty-estimation 
 
 
-<center>Copyright (c) 2018 ajay</center>
+<p align="center">
+  Copyright (c) 2018 ajay
+</p>
