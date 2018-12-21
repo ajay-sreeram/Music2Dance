@@ -1,26 +1,20 @@
 ## :dancers: Music2Dance :dancer:
 #### Generating Dance steps for given music (CNN + LSTM + MDN)
 
-### Required Python packages:
-
-    * torch, torchvision
-    * tensorflow, tensorboardX
-    * numpy, scipy
-    * imageio, cv2
-    =>Install step:
-	   sudo pip3 install torch torchvision tensorboardX tensorflow numpy scipy imageio opencv-python
-
 ### Execution Steps:
 
-    1. Creating dataset from videos (Preprocessing videos)
+    1. Installing
+        * sudo pip3 install torch torchvision tensorboardX tensorflow numpy scipy imageio opencv-python
+   
+    2. Creating dataset from videos (Preprocessing videos)
         * python PoseNet/converter/tfjs2python.py
         * python index2_video_shot_processing.py
         * python index3_create_Only_in_out_dataset.py
 
-    2. Training
+    3. Training
         * python index4_train_mdn_simple_rnn_bnc.py
 
-    3. Testing (works directly as pretrained weights included in repo)
+    4. Testing (works directly as pretrained weights included in repo)
         * run jupyter notebook in root directory
         * open index5_test_trained_model_simplernn_for_bnc.ipynb and run all cells
         * use some software(may be windows 10 photos app) to combine generated video and input audio
