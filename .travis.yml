@@ -1,0 +1,11 @@
+language: python
+
+python:
+  - "3.6"
+  
+script:
+  - python test_runner.py
+
+install:
+  - pip install -U pip
+  - pip install torch torchvision tensorflow tensorboardX numpy scipy imageio opencv-python
