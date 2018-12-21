@@ -1,0 +1,8 @@
+torch
+torchvision
+tensorflow
+tensorboardX
+numpy
+scipy
+imageio
+opencv-python
